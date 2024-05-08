@@ -44,7 +44,7 @@ const resErrorDev = (err: any, res: any) => {
   res.status(err.statusCode).json({
     message: err.message,
     error: err,
-    stack: err.stack,
+    stack: err.stack
   });
 };
 
